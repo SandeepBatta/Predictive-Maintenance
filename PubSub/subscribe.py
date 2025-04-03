@@ -15,7 +15,7 @@ def run(SUBSCRIPTION_NAME, PROJECT_ID):
     with subscriber:
         try:
             # When `timeout` is not set, result() will block indefinitely,
-            # unless an exception is encountered first.
+            # unless an exception is encountered first.....
             streaming_pull_future.result()
         except TimeoutError:
             streaming_pull_future.cancel()
